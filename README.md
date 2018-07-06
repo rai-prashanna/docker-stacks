@@ -2,15 +2,7 @@
 ![Read the Docs](https://img.shields.io/readthedocs/jupyter-docker-stacks.svg)
 [![](https://images.microbadger.com/badges/version/jupyter/base-notebook.svg)](https://microbadger.com/images/jupyter/base-notebook "Get your own version badge on microbadger.com")
 
-# Jupyter Docker Stacks
 
-Jupyter Docker Stacks are a set of ready-to-run Docker images containing Jupyter applications and interactive computing tools.
-
-## Quick Start
-
-The two examples below may help you get started if you [have Docker installed](https://docs.docker.com/install/) know [which Docker image](http://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html) you want to use, and want to launch a single Jupyter Notebook server in a container.
-
-The [User Guide on ReadTheDocs](http://jupyter-docker-stacks.readthedocs.io/) describes additional uses and features in detail.
 
 **Example 1:** This command pulls the `jupyter/scipy-notebook` image tagged `2c80cf3537ca` from Docker Hub if it is not already present on the local host. It then starts a container running a Jupyter Notebook server and exposes the server on host port 8888. The server logs appear in the terminal. Visiting `http://<hostname>:8888/?token=<token>` in a browser loads the Jupyter Notebook dashboard page, where `hostname` is the name of the computer running docker and `token` is the secret token printed in the console. The container remains intact for restart after the notebook server exits.
 
