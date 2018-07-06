@@ -66,6 +66,11 @@ RUN mkdir /home/$NB_USER/data && \
     fix-permissions /home/$NB_USER    
 #testing
 
+#testing
+RUN mkdir /home/$NB_USER/student@fusemachines.com && \
+    fix-permissions /home/$NB_USER    
+#testing
+
 
 # Install conda as jovyan and check the md5 sum provided on the download site
 ENV MINICONDA_VERSION 4.5.4
