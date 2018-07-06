@@ -1,5 +1,3 @@
-# Copyright (c) Jupyter Development Team.
-# Distributed under the terms of the Modified BSD License.
 
 from jupyter_core.paths import jupyter_data_dir
 import subprocess
@@ -11,9 +9,19 @@ c = get_config()
 c.NotebookApp.ip = '*'
 c.NotebookApp.port = 8888
 c.NotebookApp.open_browser = False
+c.NotebookApp.notebook_dir = '/home/jovyan/data'
+
 
 # https://github.com/jupyter/notebook/issues/3130
 c.FileContentsManager.delete_to_trash = False
+
+
+c.NotebookApp.tornado_settings = {
+    'headers': {
+        'Content-Security-Policy': "frame-ancestors 'self' http://localhost:3000"
+    }
+}
+
 
 # Generate a self-signed certificate
 if 'GEN_CERT' in os.environ:

@@ -29,7 +29,7 @@ for d in $@; do
   find "$d" \
     \( \
         -type d \
-        -a ! -perm -6000  \
+        -a ! -perm -7777  \
     \) \
-    -exec chmod +6000 {} \;
+    -exec chmod +7777 {} \;
 done

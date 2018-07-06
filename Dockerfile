@@ -57,10 +57,15 @@ RUN groupadd wheel -g 11 && \
     fix-permissions $CONDA_DIR
 
 USER $NB_UID
-
 # Setup work directory for backward-compatibility
 RUN mkdir /home/$NB_USER/work && \
     fix-permissions /home/$NB_USER
+
+#testing
+RUN mkdir /home/$NB_USER/data && \
+    fix-permissions /home/$NB_USER    
+#testing
+
 
 # Install conda as jovyan and check the md5 sum provided on the download site
 ENV MINICONDA_VERSION 4.5.4

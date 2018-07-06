@@ -1,0 +1,258 @@
+jupyterhub-singleuser
+--notebook-dir='/home/jovyan/data'
+/usr/local/bin/start-singleuser.sh: ignoring /usr/local/bin/start-notebook.d/*
+
+Container must be run with group "root" to update passwd file
+Executing the command: jupyterhub-singleuser --notebook-dir=/home/jovyan/data --ip="0.0.0.0" --port=8888 --notebook-dir="/home/jovyan/work" --config=/etc/nalin/jupyter_notebook_config.py --hub-api-url=http://172.17.0.1:8081/hub/api
+[I 2018-07-05 13:36:59.610 SingleUserNotebookApp extension:53] JupyterLab beta preview extension loaded from /opt/conda/lib/python3.6/site-packages/jupyterlab
+[I 2018-07-05 13:36:59.610 Singl
+
+
+
+[
+    {
+        "Id": "de6c3bf73e250e9382bed00b3a99d66833cf1203b1b606d4c54f9cac0cecd5da",
+        "Created": "2018-07-05T13:36:57.021024891Z",
+        "Path": "tini",
+        "Args": [
+            "-g",
+            "--",
+            "start-notebook.sh",
+            "--ip=\"0.0.0.0\"",
+            "--port=8888",
+            "--notebook-dir=\"/home/jovyan/work\"",
+            "--config=/etc/nalin/jupyter_notebook_config.py",
+            "--hub-api-url=http://172.17.0.1:8081/hub/api"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 23789,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2018-07-05T13:36:58.919525028Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:0619f5d0b00accfba26e1d0d46493e3f9034eeba32419a22e3f732214ac54371",
+        "ResolvConfPath": "/var/lib/docker/containers/de6c3bf73e250e9382bed00b3a99d66833cf1203b1b606d4c54f9cac0cecd5da/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/de6c3bf73e250e9382bed00b3a99d66833cf1203b1b606d4c54f9cac0cecd5da/hostname",
+        "HostsPath": "/var/lib/docker/containers/de6c3bf73e250e9382bed00b3a99d66833cf1203b1b606d4c54f9cac0cecd5da/hosts",
+        "LogPath": "/var/lib/docker/containers/de6c3bf73e250e9382bed00b3a99d66833cf1203b1b606d4c54f9cac0cecd5da/de6c3bf73e250e9382bed00b3a99d66833cf1203b1b606d4c54f9cac0cecd5da-json.log",
+        "Name": "/jupyter-student_40fusemachines_2Ecom",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": [
+            "735073135b8c1241f987c5e1d0a6d4f78775cc550f4ae85affba9fcb94768583"
+        ],
+        "HostConfig": {
+            "Binds": [
+                "/home/fm-lt-46/workspace/CC-JUPYTERHUB/jupyterhub/notebook-data/:/home/jovyan/work:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "bridge",
+            "PortBindings": {
+                "8888/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": ""
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/2c54990915a62e6a208f5bc8294af9e8342e5204bf14e8ca7066949e3b7a3df5-init/diff:/var/lib/docker/overlay2/08c90d42894b2bffe93c9bc1c51cd7d9dd2be8a04d01664835bcca743473dcea/diff:/var/lib/docker/overlay2/4c7312d72f53f03e95d04f9b4d1995e9fff8f67ba0e822ef62fabbaf2ff04e3e/diff:/var/lib/docker/overlay2/926d584e14c94eb5e84fd9dec4ecd575c537076a88de3464168b29d9cc849949/diff:/var/lib/docker/overlay2/f499796f61b9990ed726645ebd948332ebc95db138b89e1b2eb6041ac94701ef/diff:/var/lib/docker/overlay2/2a843ed3493f6fde2e27980d8919304d3ec96116aa8821976f8dd39954d06cf3/diff:/var/lib/docker/overlay2/ed181cb019ab54e423234114bf1edb64244081d672ee207a430ea5d8001df3de/diff:/var/lib/docker/overlay2/c0780a458c5f16684a0e6922d2d48800870e36bb6eb7e2e1d35fe801afc6ba4e/diff:/var/lib/docker/overlay2/b69b418da216b66605ce0061eabfc2e60529ae9d3439f0bb59c70ce7cc2d13f5/diff:/var/lib/docker/overlay2/95d3d37c4858fc9d8cff4c8e362f468c0ee4d589b2fd7d2be71de5e50c885b30/diff:/var/lib/docker/overlay2/d80718a28357f76890ea2de5b281b3a12202cd6ef81accf8af0d6017a2a33f24/diff:/var/lib/docker/overlay2/479a36f80766dbeb4319eb052b4ab9f0ab602155f646ec0c1c8c104bc0284c58/diff:/var/lib/docker/overlay2/c631fec825d578d2c9918bf3615d93e7594fe5e8a6be03164f0537496cb03f05/diff:/var/lib/docker/overlay2/c25b8dc8aa4f1021be6300b305c10404f67e81b28bb7dc1bef13465760cf5a8a/diff:/var/lib/docker/overlay2/c1f914005c2a6f50705132ae845185aae2a908337789717b5fecf07985813eaa/diff:/var/lib/docker/overlay2/0fc85e0956888b462e572107dc4b7638ad01c47859aef9ffb8ab0c9687bff54b/diff:/var/lib/docker/overlay2/4c216d9d6e7c60cf2b46c3af8d13a18ce64465a962ce700c7dcc8559a15c6891/diff:/var/lib/docker/overlay2/2ae171e8b75369aab83218cceabd20c60c2f4d5c2c4393db26a6a9e22a302a31/diff:/var/lib/docker/overlay2/d892d5421ae4ee372023e2fe3dbb0acaf34087f143a2ffb3d078bd182f58f4b4/diff:/var/lib/docker/overlay2/aebc19e839d63a8575dca2f111bf8bff4c287757a604b67f34d823d683f4660e/diff",
+                "MergedDir": "/var/lib/docker/overlay2/2c54990915a62e6a208f5bc8294af9e8342e5204bf14e8ca7066949e3b7a3df5/merged",
+                "UpperDir": "/var/lib/docker/overlay2/2c54990915a62e6a208f5bc8294af9e8342e5204bf14e8ca7066949e3b7a3df5/diff",
+                "WorkDir": "/var/lib/docker/overlay2/2c54990915a62e6a208f5bc8294af9e8342e5204bf14e8ca7066949e3b7a3df5/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/fm-lt-46/workspace/CC-JUPYTERHUB/jupyterhub/notebook-data",
+                "Destination": "/home/jovyan/work",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "de6c3bf73e25",
+            "Domainname": "",
+            "User": "1000",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "8888/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "JUPYTERHUB_API_TOKEN=5da72876bc7b45fb9a05d78f68992d95",
+                "JPY_API_TOKEN=5da72876bc7b45fb9a05d78f68992d95",
+                "JUPYTERHUB_CLIENT_ID=user-student%40fusemachines.com",
+                "JUPYTERHUB_HOST=",
+                "JUPYTERHUB_OAUTH_CALLBACK_URL=/user/student@fusemachines.com/oauth_callback",
+                "JUPYTERHUB_USER=student@fusemachines.com",
+                "JUPYTERHUB_API_URL=http://172.17.0.1:8081/hub/api",
+                "JUPYTERHUB_BASE_URL=/",
+                "JUPYTERHUB_SERVICE_PREFIX=/user/student@fusemachines.com/",
+                "PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "DEBIAN_FRONTEND=noninteractive",
+                "CONDA_DIR=/opt/conda",
+                "SHELL=/bin/bash",
+                "NB_USER=jovyan",
+                "NB_UID=1000",
+                "NB_GID=100",
+                "LC_ALL=en_US.UTF-8",
+                "LANG=en_US.UTF-8",
+                "LANGUAGE=en_US.UTF-8",
+                "HOME=/home/jovyan",
+                "MINICONDA_VERSION=4.5.4"
+            ],
+            "Cmd": [
+                "start-notebook.sh",
+                "--ip=\"0.0.0.0\"",
+                "--port=8888",
+                "--notebook-dir=\"/home/jovyan/work\"",
+                "--config=/etc/nalin/jupyter_notebook_config.py",
+                "--hub-api-url=http://172.17.0.1:8081/hub/api"
+            ],
+            "Image": "raiprashanna/notebook",
+            "Volumes": {
+                "/home/jovyan/work": {}
+            },
+            "WorkingDir": "/home/jovyan",
+            "Entrypoint": [
+                "tini",
+                "-g",
+                "--"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "maintainer": "Jupyter Project <jupyter@googlegroups.com>"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "3231a673e333f615cd37e4027edbff46f48e4af4f0022a6c1bb3b3d121ecbf07",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "8888/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "32773"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/3231a673e333",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "1a38e6fb9692daa160278ae9d7424007ddeebe38c9b6c6b4add3f477d63ca696",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "5639c2e6acfa62022ba7a6e0268975fd48f856c2395fe9e1f27a3363b17029d7",
+                    "EndpointID": "1a38e6fb9692daa160278ae9d7424007ddeebe38c9b6c6b4add3f477d63ca696",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
